@@ -3,6 +3,7 @@
   align-items: space-between;
   flex-wrap: wrap;
   justify-content: center;
+  font-family: "Handlee", cursive;
 }
 
 .card {
@@ -12,7 +13,7 @@
   height: 348px; */
   width: 2.625in;
   height: 3.625in;
-  width: 2.17in;
+  width: 2.15in;
   height: 3.25in;
   position: relative;
   break-inside: avoid;
@@ -29,12 +30,6 @@
   align-items: center;
   justify-content: center;
   color: white;
-
-  font-size: 28px;
-  font-family: "Bodoni Moda", serif;
-  font-family: "Architects Daughter", cursive;
-  font-weight: bold;
-  font-style: normal;
 }
 
 .card-cost {
@@ -65,49 +60,25 @@
 .card-title {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 10px;
-
-  font-size: 15px;
-  font-family: "Bodoni Moda", serif;
-  font-optical-sizing: auto;
-  text-transform: uppercase;
-  font-style: normal;
   margin-bottom: 5px;
-
-  font-size: 16px;
-  font-family: "Source Serif 4", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
 }
 
 .card-ability {
   height: 90px;
   height: 70px;
   height: 80px;
-
-  font-size: 18px;
-  font-family: "Caveat", cursive;
-  font-optical-sizing: auto;
-  font-style: normal;
-
-  font-size: 14px;
-  font-family: "Architects Daughter", cursive;
-  font-weight: 400;
-  font-style: normal;
 }
+
+/* .card-ability strong {
+  text-transform: uppercase;
+  font-size: 12px;
+  vertical-align: middle;
+} */
 
 .card-desc {
   font-size: 10px;
   font-style: italic;
   height: 25px;
-
-  font-size: 10px;
-  font-family: "Caveat", cursive;
-
-  font-size: 8px;
-  font-family: "Architects Daughter", cursive;
-  font-weight: 400;
-  font-style: normal;
 }
 
 .card-image {
@@ -154,21 +125,10 @@
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
-
-  font-size: 16px;
-  font-family: "Bodoni Moda", serif;
-  font-optical-sizing: auto;
-  text-transform: uppercase;
-  font-style: normal;
 }
 
 .location-ability {
   widows: 3;
-
-  font-size: 14px;
-  font-family: "Architects Daughter", cursive;
-  font-weight: 400;
-  font-style: normal;
 }
 
 .flag {
@@ -189,14 +149,6 @@
   background: grey;
   padding: 1px 4px;
   color: white;
-
-  font-family: "Caveat", cursive;
-  font-weight: bold;
-
-  font-size: 10px;
-  font-family: "Architects Daughter", cursive;
-  font-weight: 400;
-  font-style: normal;
 }
 
 .flag.left {

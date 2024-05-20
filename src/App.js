@@ -1,8 +1,7 @@
 import './App.css';
 import cards from './cards';
-// import snap from './cards-snap';
+import snap from './cards-snap';
 
-/*
 const output = {
   locations: snap.locations.map((location, index) => {
     return {...location, title: cards.locations[index].title}
@@ -15,7 +14,8 @@ const output = {
     }
   }),
 }
-*/
+
+console.log(output)
 
 const Flag = ({ active, position }) => {
   return (

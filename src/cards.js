@@ -95,7 +95,7 @@ const cards = {
             "cost": 1,
             "power": 3,
             "trigger": "On reveal",
-            "ability": "Your opponent randomly chooses a card to discard from your hand",
+            "ability": "Your opponent randomly discards a card from your hand",
             "description": "A predatory insect that captures prey."
         },
         {
@@ -111,7 +111,7 @@ const cards = {
             "cost": 1,
             "power": 2,
             "trigger": "On reveal",
-            "ability": "Add the top of the draw pile to your hand",
+            "ability": "Add the top card of the draw pile to your hand",
             "description": "A hopping insect with an unpredictable nature."
         },
         {
@@ -127,7 +127,7 @@ const cards = {
             "cost": 1,
             "power": 2,
             "trigger": "On reveal",
-            "ability": "Add a 1/1 firefly token to each other location",
+            "ability": "Add a 1/1 Firefly token to each other location",
             "description": "Illuminates the night, symbolizing spread of light."
         },
         {
