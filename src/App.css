@@ -1,0 +1,228 @@
+.cards {
+  display: flex;
+  align-items: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid grey;
+  padding: 20px;
+  /* width: 252px;
+  height: 348px; */
+  width: 2.625in;
+  height: 3.625in;
+  width: 2.17in;
+  height: 3.25in;
+  position: relative;
+  break-inside: avoid;
+}
+
+.card-cost, .card-power {
+  position: absolute;
+  top: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  font-size: 28px;
+  font-family: "Bodoni Moda", serif;
+  font-family: "Architects Daughter", cursive;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.card-cost {
+  left: 10px;
+  border-radius: 50%;
+  background: grey;
+}
+
+.card-power {
+  right: 10px;
+  border-radius: 4px;
+  background: black;
+}
+
+.card-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  min-height: 120px;
+
+  padding-bottom: 5px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+
+  font-size: 15px;
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  text-transform: uppercase;
+  font-style: normal;
+  margin-bottom: 5px;
+
+  font-size: 16px;
+  font-family: "Source Serif 4", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.card-ability {
+  height: 90px;
+  height: 70px;
+  height: 80px;
+
+  font-size: 18px;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  font-size: 14px;
+  font-family: "Architects Daughter", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card-desc {
+  font-size: 10px;
+  font-style: italic;
+  height: 25px;
+
+  font-size: 10px;
+  font-family: "Caveat", cursive;
+
+  font-size: 8px;
+  font-family: "Architects Daughter", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card-image {
+  margin-top: 15px;
+  background: #eee;
+  border: 1px solid grey;
+  height: 160px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.location::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 70px;
+  bottom: 70px;
+  width: 1px;
+  background: grey;
+  left: 50%;
+}
+
+.location-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.location-info.bottom {
+  left: auto;
+  right: 25%;
+  transform: translate(0, -50%) rotate(90deg);
+}
+
+.location-info.top {
+  left: 25%;
+  transform: translate(0, -50%) rotate(-90deg);
+}
+
+.location-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+
+  font-size: 16px;
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.location-ability {
+  widows: 3;
+
+  font-size: 14px;
+  font-family: "Architects Daughter", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.flag {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: stretch;
+  /* height: 15px;
+  width: 30px; */
+  padding: 2px;
+  gap: 2px;
+  border-radius: 2px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-family: monospace;
+  background: grey;
+  padding: 1px 4px;
+  color: white;
+
+  font-family: "Caveat", cursive;
+  font-weight: bold;
+
+  font-size: 10px;
+  font-family: "Architects Daughter", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.flag.left {
+  top: calc(50% - 80px);
+  top: calc(50% - 60px);
+  left: 2px;
+  transform: translateY(-50%) rotate(-90deg);
+}
+
+.flag.right {
+  top: calc(50% - 80px);
+  top: calc(50% - 60px);
+  left: auto;
+  right: 2px;
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.flag-item {
+  border-radius: 2px;
+  background: white;
+  border: 1px solid grey;
+  width: 100%;
+  height: 100%;
+}
+
+.flag-item.active {
+  background: black;
+  border-color: black;
+}
