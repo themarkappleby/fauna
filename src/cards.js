@@ -275,12 +275,12 @@ const cards = {
             "description": "A common bird, known for its positive impact on its environment."
         },
         {
-            "title": "Yellow Warbler",
+            "title": "Red-tailed Hawk",
             "cost": 3,
             "power": 5,
             "trigger": "On reveal",
             "ability": "Destroy your other cards here",
-            "description": "A bright and aggressive bird, often taking over its space."
+            "description": "An aggressive bird, often taking over its space."
         },
         {
             "title": "Chipmunk",
@@ -301,10 +301,10 @@ const cards = {
         {
             "title": "Flying Squirrel",
             "cost": 4,
-            "power": 6,
-            "trigger": "Ongoing",
-            "ability": "+5 Influence if this is your only card here",
-            "description": "Glides between trees, thriving in solitary freedom."
+            "power": 5,
+            "trigger": "",
+            "ability": "If a card moved last turn, this costs 1",
+            "description": "Glides between trees, thriving with movement."
         },
         {
             "title": "Groundhog",
@@ -325,25 +325,25 @@ const cards = {
         {
             "title": "Porcupine",
             "cost": 4,
-            "power": 5,
-            "trigger": "",
-            "ability": "If a card moved last turn, this costs 1",
+            "power": 6,
+            "trigger": "Ongoing",
+            "ability": "+5 Influence if this is your only card here",
             "description": "Defends itself with sharp quills, deterring attackers."
         },
         {
             "title": "Beaver",
             "cost": 5,
-            "power": 8,
-            "trigger": "On reveal",
-            "ability": "If your opponent played a card here this turn, +4 Influence",
+            "power": 0,
+            "trigger": "Ongoing",
+            "ability": "Your total Influence is doubled here",
             "description": "Builds strong dams, creating safe habitats."
         },
         {
             "title": "Bobcat",
             "cost": 5,
-            "power": 0,
-            "trigger": "Ongoing",
-            "ability": "Your total Influence is doubled here",
+            "power": 8,
+            "trigger": "On reveal",
+            "ability": "If your opponent played a card here this turn, +4 Influence",
             "description": "A stealthy and powerful hunter, influencing its territory."
         },
         {
