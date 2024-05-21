@@ -92,7 +92,9 @@ function App() {
       })}
       {cards.locations.map(location => {
         return (
-          <div className="card location" key={location.title}>
+          <div onClick={() => handleClick(location)} className="card location" key={location.title}>
+            <div className="location-image" style={{backgroundImage: `url(/${imgName(location.title)}.png)`}} />
+            <div className="location-image flip" style={{backgroundImage: `url(/${imgName(location.title)}.png)`}} />
             <div className="location-info top">
               <div className="location-title">
                 {location.title}
