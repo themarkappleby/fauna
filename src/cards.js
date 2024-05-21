@@ -67,7 +67,7 @@ const cards = {
             "description": "Essential for colony life, supporting group movement."
         },
         {
-            "title": "Cricket",
+            "title": "Grasshopper",
             "cost": 1,
             "power": 2,
             "trigger": "",
@@ -107,12 +107,12 @@ const cards = {
             "description": "A beneficial insect, protecting plants from pests."
         },
         {
-            "title": "Grasshopper",
+            "title": "Cricket",
             "cost": 1,
             "power": 2,
             "trigger": "On reveal",
             "ability": "Add the top card of the draw pile to your hand",
-            "description": "A hopping insect with an unpredictable nature."
+            "description": "Calling out for a mate."
         },
         {
             "title": "Caterpillar",

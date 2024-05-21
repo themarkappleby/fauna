@@ -17,17 +17,6 @@ const output = {
 
 console.log(output)
 
-const Flag = ({ active, position }) => {
-  return (
-    <div className={`flag ${position}`}>
-      {active}
-      {/* <div className={`flag-item ${active === 'left' ? 'active' : ''}`} />
-      <div className={`flag-item ${active === 'middle' ? 'active' : ''}`} />
-      <div className={`flag-item ${active === 'right' ? 'active' : ''}`} /> */}
-    </div>
-  )
-}
-
 // Ref https://stackoverflow.com/a/2450976/918060
 function shuffle(array) {
   let currentIndex = array.length;
@@ -45,17 +34,41 @@ function shuffle(array) {
   }
 }
 
+const imgName = title => {
+  title = title.toLowerCase().replace(/\s/gm, '-');
+  return title;
+}
+
 function App() {
+
+  const handleClick = card => {
+    const name = imgName(card.title);
+    navigator.clipboard.writeText(name);
+    window.open(`https://www.google.com/search?tbm=isch&q=${name}-painting`, '_blank');
+    console.log(`Copied: ${name}!`)
+  }
+
   return (
     <div className="cards">
       {cards.characters.map(card => {
-        const activeOrder = ['left', 'middle', 'right']
+        const activeOrder = ['0', '1', '2']
         shuffle(activeOrder);
         return (
-          <div className="card" key={card.title}>
-              <Flag position="left" active={activeOrder[0]} />
-              <Flag position="middle" active={activeOrder[1]} />
-              <Flag position="right" active={activeOrder[2]} />
+          <div className="card" key={card.title} onClick={() => handleClick(card)}>
+              <div className="flags">
+                <div className="flag">
+                    <div>{activeOrder[0]}</div>
+                    <img src="/arrow.svg" />
+                </div>
+                <div className="flag">
+                    <div>{activeOrder[1]}</div>
+                    <img src="/arrow.svg" />
+                </div>
+                <div className="flag">
+                    <div>{activeOrder[2]}</div>
+                    <img src="/arrow.svg" />
+                </div>
+              </div>
               <div className="card-info">
                 <div className="card-title">
                   {card.title}
@@ -73,7 +86,7 @@ function App() {
               <div className="card-cost">
                 {card.cost}
               </div>
-              <div className="card-image" />
+              <div className="card-image" style={{backgroundImage: `url(/${imgName(card.title)}.png)`}} />
           </div>
         )
       })}
