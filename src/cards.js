@@ -46,17 +46,17 @@ const cards = {
             "title": "Monarch Butterfly",
             "cost": 1,
             "power": 2,
-            "trigger": "",
-            "ability": "",
+            "trigger": "On reveal",
+            "ability": "The last card you played moves here",
             "description": "A delicate butterfly, symbolizing subtle beginnings."
         },
         {
-            "title": "Dragonfly",
+            "title": "Ladybug",
             "cost": 1,
             "power": 1,
             "trigger": "On reveal",
             "ability": "If you play a card at this location next turn, +3 Influence",
-            "description": "A small but agile insect, thriving with care."
+            "description": "An insect that thrives with care."
         },
         {
             "title": "Ant",
@@ -99,12 +99,12 @@ const cards = {
             "description": "A predatory insect that captures prey."
         },
         {
-            "title": "Ladybug",
+            "title": "Cross Orbweaver",
             "cost": 1,
             "power": 2,
             "trigger": "On reveal",
             "ability": "Destroy an enemy 1-Cost card here",
-            "description": "A beneficial insect, protecting plants from pests."
+            "description": "Preys on other insects."
         },
         {
             "title": "Cricket",
