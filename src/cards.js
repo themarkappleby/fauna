@@ -10,35 +10,35 @@ const cards = {
         },
         {
             "title": "Coniferous Woodlands",
-            "ability": "On turn 5, all cards must be played here"
+            "ability": "Cards that cost 1, 2, or 3 can't be played here"
         },
         {
             "title": "Natural Escarpment",
             "ability": "Whoever is winning this location gets +3 Influence at the others"
         },
         {
-            "title": "Crowded City",
-            "ability": "The player winning here gets +1 Energy each turn"
+            "title": "Urban Park",
+            "ability": "After you play a card here, destroy it to get +2 Energy next turn"
         },
         {
             "title": "Rocky Outcrops",
-            "ability": "Cards that cost 1, 2, or 3 can't be played here"
+            "ability": "On turn 5, all cards must be played here"
         },
         {
-            "title": "Urban Park",
-            "ability": "Whoever is winning here gets +4 Influence at adjacent locations"
+            "title": "Crowded City",
+            "ability": "Roll die. On 1 or 2, destroy the card you intended to play here"
         },
         {
             "title": "Swampy Marsh",
-            "ability": "The first card you play here switches sides"
+            "ability": "The player winning here gets +1 Energy each turn"
         },
         {
             "title": "Nature Reserve",
-            "ability": "Add a 1/1 squirrel token to each location"
+            "ability": "There is a turn 7 this game"
         },
         {
             "title": "Forest Clearing",
-            "ability": "After you play a card here, destroy it to get +2 Energy next turn"
+            "ability": "When revealed, add a 1/1 squirrel token to each location"
         }
     ],
     "characters": [
@@ -235,12 +235,12 @@ const cards = {
             "description": "Aggressive defender of its territory, eliminating small intruders."
         },
         {
-            "title": "Northern Cardinal",
+            "title": "Turkey Vulture",
             "cost": 3,
             "power": 5,
             "trigger": "On reveal",
             "ability": "Discard the highest-cost card from your hand",
-            "description": "A bright and bold bird, making decisive actions."
+            "description": "Use their keen sense of smell to find fresh carcasses."
         },
         {
             "title": "Chickadee",

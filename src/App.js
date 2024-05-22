@@ -94,22 +94,19 @@ function App() {
         return (
           <div onClick={() => handleClick(location)} className="card location" key={location.title}>
             <div className="location-image" style={{backgroundImage: `url(/${imgName(location.title)}.png)`}} />
-            <div className="location-image flip" style={{backgroundImage: `url(/${imgName(location.title)}.png)`}} />
-            <div className="location-info top">
-              <div className="location-title">
-                {location.title}
-              </div>
-              <div className="location-ability">
-                {location.ability}
-              </div>
-            </div>
-            <div className="location-info bottom">
-              <div className="location-title">
-                {location.title}
-              </div>
-              <div className="location-ability">
-                {location.ability}
-              </div>
+            <div>
+              {[...Array(2)].map((e, i) => (
+                <div className="location-info">
+                  <div>
+                    <div className="location-title">
+                      {location.title}
+                    </div>
+                    <div className="location-ability">
+                      {location.ability}.
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         )
