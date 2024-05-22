@@ -2,7 +2,7 @@ const cards = {
     "locations": [
         {
             "title": "Boreal Forest",
-            "ability": "After turn 4, whoever is winning here draws 2"
+            "ability": "On turn 5, all cards must be played here"
         },
         {
             "title": "Lonely Island",
@@ -18,15 +18,15 @@ const cards = {
         },
         {
             "title": "Urban Park",
-            "ability": "After you play a card here, destroy it to get +2 Energy next turn"
+            "ability": "Roll die. On 1 or 2, destroy the card you intended to play here"
         },
         {
             "title": "Rocky Outcrops",
-            "ability": "On turn 5, all cards must be played here"
+            "ability": "After turn 4, whoever is winning here draws 2"
         },
         {
             "title": "Crowded City",
-            "ability": "Roll die. On 1 or 2, destroy the card you intended to play here"
+            "ability": "After you play a card here, destroy it to get +2 Energy next turn"
         },
         {
             "title": "Swampy Marsh",
