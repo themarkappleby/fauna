@@ -123,15 +123,15 @@ function App() {
           <li><b>Form the Draw Pile</b> by shuffling all remaining Fauna cards.</li>
         </ol>
       </div>
-      <div className="card instruction round">
-        <strong>Round Sequence</strong>
+      <div className="card instruction turn">
+        <strong>Turn Sequence</strong>
         <ol>
-          <li><b>Pass the die</b> and increase it by 1. Skip this in the first round.</li>
+          <li><b>Pass the die</b> and increase it by 1. Skip this in the first turn.</li>
           <li><b>Flip an unrevealed Location card</b>.</li>
           <li>Players <b>draw 2 cards, keep 1</b>, and discard the other.</li>
           <li>Players <b>play cards face down</b> in a row. Place 0-2 tokens above each card to assign it a Location.</li>
           <li><b>Reveal and place cards</b> at assigned Locations, starting with Initiative player. Limit 4 Fauna per Location per player.</li>
-          <li>In the 6th round, the player that controls the most Locations wins.</li>
+          <li>In the 6th turn, the player that controls the most Locations wins.</li>
         </ol>
       </div>
     </div>
