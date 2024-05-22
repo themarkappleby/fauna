@@ -111,6 +111,29 @@ function App() {
           </div>
         )
       })}
+      <div className="card instruction">
+        <strong>Setup:</strong>
+        <ol>
+          <li><b>Set the die</b> in front of a player with the 1-side upwards. This player has intiative.</li>
+          <li><b>Place 3 location cards</b> face down between players.</li>
+          <li><b>Deal 3 Fauna cards</b> to each player.</li>
+          <li><b>Keep 1 Fauna card and pass</b> the other 2 to the other player.</li>
+          <li><b>Keep 1 Fauna card</b> and discard the other.</li>
+          <li><b>Repeat steps 3 to 5.</b></li>
+          <li><b>Form the draw pile</b> by shuffling all discarded and remaining Fauna cards.</li>
+        </ol>
+      </div>
+      <div className="card instruction">
+        <strong>Round:</strong>
+        <ol>
+          <li><b>Pass the die</b> and increase by 1. Skip if first round.</li>
+          <li><b>Flip an unrevealed location card.</b></li>
+          <li>Both players <b>draw 2 cards</b>, keep one, discard the other.</li>
+          <li>Both players <b>play cards</b> face down in a row.</li>
+          <li><b>Reveal cards</b> left to right and place them at assigned locations, starting with initiative player. Limit 4 Fauna per location per player.</li>
+          <li>If this is the 6th round, <b>determine winner</b> based on who has the most influence at each location.</li>
+        </ol>
+      </div>
     </div>
   );
 }

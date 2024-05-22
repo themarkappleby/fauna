@@ -284,3 +284,14 @@
 .flag img {
   height: 16px;
 }
+
+.instruction {
+  padding: 15px;
+  font-size: 15px;
+  text-wrap: pretty;
+  ol {
+    margin: 0;
+    padding: 0;
+    padding-left: 13px;
+  }
+}
