@@ -134,6 +134,14 @@ function App() {
           <li>In the 6th turn, the player that controls the most Locations wins.</li>
         </ol>
       </div>
+      <div className="card title">
+        <div className="title-image" style={{backgroundImage: 'url(/boreal-forest.png)'}} />
+        <div>
+          <strong>Fauna</strong>
+          <div>A competitive card game for two; inspired by nature</div>
+        </div>
+      </div>
+      <div className="card"></div>
     </div>
   );
 }
