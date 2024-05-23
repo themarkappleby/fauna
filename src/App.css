@@ -394,6 +394,7 @@
     text-align: center;
     position: relative;
     z-index: 10;
+    margin-top: -150px;
     &::before {
       content: '';
       display: block;
@@ -434,4 +435,17 @@
     -1px -1px 0 #000,
     1px -1px 0 #000;
   }
+}
+
+.title-components {
+   position: absolute !important;
+   bottom: 10px;
+   left: 0;
+   width: 100%;
+   ul {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+   }
 }

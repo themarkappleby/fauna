@@ -146,6 +146,12 @@ function App() {
           <strong>Fauna</strong>
           <div>A competitive card game for two; inspired by nature</div>
         </div>
+        <div className="title-components">
+          <ul>
+            <li><b>Additional required components:</b></li>
+            <li>1 six-sided die & 20 generic tokens</li>
+          </ul>
+        </div>
       </div>
       <div className="card"></div>
     </div>
