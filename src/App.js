@@ -73,7 +73,7 @@ function App() {
                 <div className="flags">
                   <div className="flag">
                       <div>{activeOrder[3]}</div>
-                      <img src="/arrow.svg" />
+                      <img src="/trash.svg" />
                   </div>
                 </div>
               </div>
@@ -123,23 +123,21 @@ function App() {
         <strong>Game Setup</strong>
         <ol>
           <li><b>Set the Energy die</b> in front of a player with the 1-side upwards. This player has Initiative.</li>
-          <li><b>Place 3 Location cards</b> face down between players.</li>
-          <li><b>Deal 3 Fauna cards</b> to each player.</li>
-          <li><b>Keep 1 Fauna card</b> and pass the other 2 to the other player.</li>
-          <li><b>Keep 1 Fauna card</b> and discard the remaining one.</li>
-          <li><b>Repeat steps 3 to 5</b>.</li>
-          <li><b>Form the Draw Pile</b> by shuffling all remaining Fauna cards.</li>
+          <li>Shuffle and <b>place 3 Location cards</b> face down between players.</li>
+          <li>Shuffle and <b>deal 5 Fauna cards</b> to each player.</li>
+          <li>Each player can choose to <b>discard any number of cards</b> from their hand and draw back up to 5 Fauna cards again.</li>
+          <li><b>Form the Draw Pile</b> by shuffling all remaining and discarded Fauna cards.</li>
         </ol>
       </div>
       <div className="card instruction turn">
         <strong>Turn Sequence</strong>
         <ol>
-          <li><b>Pass the die</b> and increase it by 1. Skip this in the first turn.</li>
           <li><b>Flip an unrevealed Location card</b>.</li>
-          <li>Players <b>draw 2 cards, keep 1</b>, and discard the other.</li>
+          <li>Players each <b>draw cards</b> until they have a hand of 5 cards.</li>
           <li>Players <b>play cards face down</b> in a row. Place 0-3 tokens above each card to assign it a Location.</li>
-          <li><b>Reveal and place cards</b> at assigned Locations, starting with Initiative player. Limit 4 Fauna per Location per player.</li>
+          <li><b>Reveal and place cards</b> at assigned Locations, starting with the Initiative player. Limit 4 Fauna per Location per player.</li>
           <li>In the 6th turn, the player that controls the most Locations wins.</li>
+          <li><b>Pass the die</b> and increase it by 1.</li>
         </ol>
       </div>
       <div className="card title">

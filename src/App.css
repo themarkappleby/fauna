@@ -275,6 +275,7 @@
     /* transform: scale(0.9); */
     &::after {
       background: rgb(186, 186, 186);
+      background: white;
     }
     /*
     .flag {
@@ -284,7 +285,7 @@
       opacity: 0.7;
     } */
     .flag img {
-      transform: rotate(90deg);
+      transform: rotate(0deg);
     }
   }
 }
@@ -325,7 +326,7 @@
 }
 
 .instruction {
-  padding: 16px 15px;
+  padding: 10px 16px;
   font-size: 15px;
   text-wrap: pretty;
   strong {
@@ -360,6 +361,7 @@
     li {
       counter-increment: count;
       position: relative;
+      margin-bottom: 3px;
       &::before {
         content: counter(count);
         position: absolute;
