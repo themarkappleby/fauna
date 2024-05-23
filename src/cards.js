@@ -123,12 +123,12 @@ const cards = {
             "description": "Forms dense colonies, benefiting from group growth."
         },
         {
-            "title": "Firefly",
-            "cost": 0,
-            "influence": 0,
+            "title": "Leech",
+            "cost": 1,
+            "influence": 3,
             "trigger": "On reveal",
-            "ability": "",
-            "description": "Illuminates the night, symbolizing spread of light."
+            "ability": "Remove the abilities on the next card you play",
+            "description": "Drains the life from others."
         },
         {
             "title": "Locust",
