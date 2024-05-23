@@ -70,7 +70,7 @@ function App() {
           <li>Shuffle and <b>place 3 Location cards</b> face down between players.</li>
           <li>Shuffle and <b>deal 5 Fauna cards</b> to each player.</li>
           <li>Each player can choose to <b>discard any number of cards</b> from their hand and draw back up to 5 Fauna cards again.</li>
-          <li><b>Form the Draw Pile</b> by shuffling all remaining and discarded Fauna cards.</li>
+          <li><b>Form the Draw Pile</b> by shuffling all remaining Fauna cards.</li>
         </ol>
       </div>
       <div className="card instruction turn">
@@ -122,8 +122,8 @@ function App() {
                   {card.description}
                 </div>
               </div>
-              <div className="card-power">
-                {card.power}
+              <div className="card-influence">
+                {card.influence}
               </div>
               <div className="card-cost">
                 {card.cost}

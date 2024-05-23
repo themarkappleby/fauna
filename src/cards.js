@@ -45,7 +45,7 @@ const cards = {
         {
             "title": "Monarch Butterfly",
             "cost": 1,
-            "power": 2,
+            "influence": 2,
             "trigger": "On reveal",
             "ability": "The last card you played moves here",
             "description": "A delicate butterfly, symbolizing subtle beginnings."
@@ -53,7 +53,7 @@ const cards = {
         {
             "title": "Ladybug",
             "cost": 1,
-            "power": 1,
+            "influence": 1,
             "trigger": "On reveal",
             "ability": "If you play a card at this location next turn, +3 Influence",
             "description": "An insect that thrives with care."
@@ -61,7 +61,7 @@ const cards = {
         {
             "title": "Ant",
             "cost": 1,
-            "power": 2,
+            "influence": 2,
             "trigger": "On reveal",
             "ability": "After you play your next card, move it one location to the left",
             "description": "Essential for colony life, supporting group movement."
@@ -69,7 +69,7 @@ const cards = {
         {
             "title": "Grasshopper",
             "cost": 1,
-            "power": 2,
+            "influence": 2,
             "trigger": "",
             "ability": "You can move this once",
             "description": "A nimble insect that can jump to find better conditions."
@@ -77,7 +77,7 @@ const cards = {
         {
             "title": "Beetle",
             "cost": 1,
-            "power": 1,
+            "influence": 1,
             "trigger": "",
             "ability": "When this card is destroyed, give your cards +1 Influence",
             "description": "Thrives in various environments, symbolizing resilience."
@@ -85,7 +85,7 @@ const cards = {
         {
             "title": "Wasp",
             "cost": 1,
-            "power": 1,
+            "influence": 1,
             "trigger": "On reveal",
             "ability": "If your opponent played a card here this turn, +4 Influence",
             "description": "Toxic and defensive, deterring threats effectively."
@@ -93,7 +93,7 @@ const cards = {
         {
             "title": "Praying Mantis",
             "cost": 1,
-            "power": 3,
+            "influence": 3,
             "trigger": "On reveal",
             "ability": "Your opponent randomly discards a card from your hand",
             "description": "A predatory insect that captures prey."
@@ -101,47 +101,47 @@ const cards = {
         {
             "title": "Cross Orbweaver",
             "cost": 1,
-            "power": 2,
+            "influence": 2,
             "trigger": "On reveal",
             "ability": "Destroy an enemy 1-Cost card here",
             "description": "Preys on other insects."
         },
         {
-            "title": "Cricket",
+            "title": "Maggot",
             "cost": 1,
-            "power": 2,
-            "trigger": "On reveal",
-            "ability": "Add the top card of the draw pile to your hand",
-            "description": "Calling out for a mate."
+            "influence": 2,
+            "trigger": "",
+            "ability": "When one of your cards is destroyed, this comes out of your hand to replace it",
+            "description": "Feasts on the fallen."
         },
         {
             "title": "Caterpillar",
             "cost": 1,
-            "power": 1,
+            "influence": 1,
             "trigger": "Ongoing",
             "ability": "If your side of this location is full, +4 Influence",
             "description": "Forms dense colonies, benefiting from group growth."
         },
         {
             "title": "Firefly",
-            "cost": 1,
-            "power": 2,
+            "cost": 0,
+            "influence": 0,
             "trigger": "On reveal",
-            "ability": "Add a 1/1 Firefly token to each other location",
+            "ability": "",
             "description": "Illuminates the night, symbolizing spread of light."
         },
         {
-            "title": "Hornet",
+            "title": "Locust",
             "cost": 1,
-            "power": 2,
+            "influence": 2,
             "trigger": "On reveal",
-            "ability": "Destroy the lowest-Cost card in your opponent's hand",
-            "description": "Aggressive and invasive, outcompeting others."
+            "ability": "When this moves, dobule its Influence",
+            "description": "Swarms on the move gather strength."
         },
         {
             "title": "Brook Trout",
             "cost": 2,
-            "power": 2,
+            "influence": 2,
             "trigger": "On reveal",
             "ability": "If this is the middle location, +3 Influence",
             "description": "A well-balanced fish, thriving in central waters."
@@ -149,7 +149,7 @@ const cards = {
         {
             "title": "Salamander",
             "cost": 2,
-            "power": 2,
+            "influence": 2,
             "trigger": "",
             "ability": "When a card moves here, this gains +2 Influence",
             "description": "Adaptable and resilient, thriving in various conditions."
@@ -157,7 +157,7 @@ const cards = {
         {
             "title": "Northern Pike",
             "cost": 2,
-            "power": 3,
+            "influence": 3,
             "trigger": "On reveal",
             "ability": "Replace this location with a new one",
             "description": "A predatory fish that can alter its environment."
@@ -165,7 +165,7 @@ const cards = {
         {
             "title": "Bullfrog",
             "cost": 2,
-            "power": 2,
+            "influence": 2,
             "trigger": "On reveal",
             "ability": "Destroy your other cards here. +2 Influence for each destroyed",
             "description": "Benefits from clearing its territory."
@@ -173,7 +173,7 @@ const cards = {
         {
             "title": "Snapping Turtle",
             "cost": 2,
-            "power": 3,
+            "influence": 3,
             "trigger": "Ongoing",
             "ability": "Can't be destroyed, moved, or have its Influence reduced",
             "description": "A tough and defensive creature, immune to most threats."
@@ -181,7 +181,7 @@ const cards = {
         {
             "title": "Rainbow Trout",
             "cost": 2,
-            "power": 3,
+            "influence": 3,
             "trigger": "On reveal",
             "ability": "Move your highest-Influence card(s) to this location",
             "description": "Valued for its strength and adaptability."
@@ -189,7 +189,7 @@ const cards = {
         {
             "title": "Perch",
             "cost": 2,
-            "power": 2,
+            "influence": 2,
             "trigger": "On reveal",
             "ability": "Give the next card you play +2 Influence",
             "description": "A small fish that enhances the ecosystem."
@@ -197,7 +197,7 @@ const cards = {
         {
             "title": "Sunfish",
             "cost": 2,
-            "power": 0,
+            "influence": 0,
             "trigger": "",
             "ability": "After you play a card here, +2 Influence",
             "description": "Gains strength with support."
@@ -205,7 +205,7 @@ const cards = {
         {
             "title": "Pickerel",
             "cost": 2,
-            "power": 2,
+            "influence": 2,
             "trigger": "On reveal",
             "ability": "If your opponent played a card here this turn, +4 Influence",
             "description": "A competitive fish, thriving in challenging conditions."
@@ -213,7 +213,7 @@ const cards = {
         {
             "title": "Mudpuppy",
             "cost": 2,
-            "power": 0,
+            "influence": 0,
             "trigger": "",
             "ability": "When this card moves to a location, +3 Influence for each enemy card there",
             "description": "Thrives in shadowy environments, amid dense growth."
@@ -221,7 +221,7 @@ const cards = {
         {
             "title": "Blue Jay",
             "cost": 3,
-            "power": 3,
+            "influence": 3,
             "trigger": "On reveal",
             "ability": "If your opponent played a card here this turn, +4 Influence",
             "description": "A cunning and resourceful bird, often seen as competitive."
@@ -229,7 +229,7 @@ const cards = {
         {
             "title": "Red-Winged Blackbird",
             "cost": 3,
-            "power": 3,
+            "influence": 3,
             "trigger": "On reveal",
             "ability": "Destroy ALL 1-Cost cards",
             "description": "Aggressive defender of its territory, eliminating small intruders."
@@ -237,7 +237,7 @@ const cards = {
         {
             "title": "Turkey Vulture",
             "cost": 3,
-            "power": 5,
+            "influence": 5,
             "trigger": "On reveal",
             "ability": "Discard the highest-cost card from your hand",
             "description": "Use their keen sense of smell to find fresh carcasses."
@@ -245,7 +245,7 @@ const cards = {
         {
             "title": "Chickadee",
             "cost": 3,
-            "power": 2,
+            "influence": 2,
             "trigger": "Ongoing",
             "ability": "Adjacent locations have +2 Influence",
             "description": "Small and social, enhancing the energy of its surroundings."
@@ -253,7 +253,7 @@ const cards = {
         {
             "title": "Common Grackle",
             "cost": 3,
-            "power": 3,
+            "influence": 3,
             "trigger": "Ongoing",
             "ability": "+1 Influence for each enemy card here",
             "description": "Forms large flocks, gaining strength from numbers."
@@ -261,7 +261,7 @@ const cards = {
         {
             "title": "Song Sparrow",
             "cost": 3,
-            "power": 1,
+            "influence": 1,
             "trigger": "",
             "ability": "After you play a card, this gains +1 Influence",
             "description": "A cheerful bird, gaining energy from its surroundings."
@@ -269,7 +269,7 @@ const cards = {
         {
             "title": "American Robin",
             "cost": 3,
-            "power": 3,
+            "influence": 3,
             "trigger": "Ongoing",
             "ability": "Your other cards here have +1 Influence",
             "description": "A common bird, known for its positive impact on its environment."
@@ -277,7 +277,7 @@ const cards = {
         {
             "title": "Red-tailed Hawk",
             "cost": 3,
-            "power": 5,
+            "influence": 5,
             "trigger": "On reveal",
             "ability": "Destroy your other cards here",
             "description": "An aggressive bird, often taking over its space."
@@ -285,7 +285,7 @@ const cards = {
         {
             "title": "Chipmunk",
             "cost": 4,
-            "power": 5,
+            "influence": 5,
             "trigger": "On reveal",
             "ability": "If you don't play a card at this location next turn, +4 Influence",
             "description": "Stores food for later, planning for future gain."
@@ -293,7 +293,7 @@ const cards = {
         {
             "title": "Red Squirrel",
             "cost": 4,
-            "power": 4,
+            "influence": 4,
             "trigger": "Ongoing",
             "ability": "Your 1-Cost cards have +1 Influence",
             "description": "Known for its energy and resourcefulness, enhancing small gains."
@@ -301,7 +301,7 @@ const cards = {
         {
             "title": "Flying Squirrel",
             "cost": 4,
-            "power": 5,
+            "influence": 5,
             "trigger": "",
             "ability": "If a card moved last turn, this costs 1",
             "description": "Glides between trees, thriving with movement."
@@ -309,7 +309,7 @@ const cards = {
         {
             "title": "Groundhog",
             "cost": 4,
-            "power": 6,
+            "influence": 6,
             "trigger": "",
             "ability": "",
             "description": "Known for burrowing and predicting seasons."
@@ -317,7 +317,7 @@ const cards = {
         {
             "title": "Hare",
             "cost": 4,
-            "power": 1,
+            "influence": 1,
             "trigger": "On reveal",
             "ability": "Add the top card of the draw pile to this location",
             "description": "Quick and agile, known for rapid reproduction."
@@ -325,7 +325,7 @@ const cards = {
         {
             "title": "Porcupine",
             "cost": 4,
-            "power": 6,
+            "influence": 6,
             "trigger": "Ongoing",
             "ability": "+5 Influence if this is your only card here",
             "description": "Defends itself with sharp quills, deterring attackers."
@@ -333,7 +333,7 @@ const cards = {
         {
             "title": "Beaver",
             "cost": 5,
-            "power": 0,
+            "influence": 0,
             "trigger": "Ongoing",
             "ability": "Your total Influence is doubled here",
             "description": "Builds strong dams, creating safe habitats."
@@ -341,7 +341,7 @@ const cards = {
         {
             "title": "Bobcat",
             "cost": 5,
-            "power": 8,
+            "influence": 8,
             "trigger": "On reveal",
             "ability": "If your opponent played a card here this turn, +4 Influence",
             "description": "A stealthy and powerful hunter, influencing its territory."
@@ -349,7 +349,7 @@ const cards = {
         {
             "title": "Fox",
             "cost": 5,
-            "power": 4,
+            "influence": 4,
             "trigger": "Ongoing",
             "ability": "The location to the right has +8 Influence",
             "description": "Clever and strategic, impacting nearby areas."
@@ -357,7 +357,7 @@ const cards = {
         {
             "title": "Coyote",
             "cost": 5,
-            "power": 3,
+            "influence": 3,
             "trigger": "Ongoing",
             "ability": "Your other cards have +1 Influence",
             "description": "A versatile and social predator, enhancing group strength."
@@ -365,7 +365,7 @@ const cards = {
         {
             "title": "Moose",
             "cost": 6,
-            "power": 12,
+            "influence": 12,
             "trigger": "",
             "ability": "",
             "description": "A massive and powerful mammal, dominating its environment."
@@ -373,7 +373,7 @@ const cards = {
         {
             "title": "Black Bear",
             "cost": 6,
-            "power": 9,
+            "influence": 9,
             "trigger": "On reveal",
             "ability": "Move your other cards one location to the left",
             "description": "A strong and adaptable animal, rearranging its surroundings."

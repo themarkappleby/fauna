@@ -29,7 +29,7 @@
   } */
 }
 
-.card-cost, .card-power {
+.card-cost, .card-influence {
   position: absolute;
   top: 10px;
   font-size: 22px;
@@ -45,7 +45,7 @@
   /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); */
 }
 
-.card-cost::after, .card-power::after {
+.card-cost::after, .card-influence::after {
   content: '';
   display: block;
   position: absolute;
@@ -60,7 +60,7 @@
   opacity: 0.4;
 }
 
-.card-power::after {
+.card-influence::after {
   border-radius: 4px;
 }
 
@@ -71,7 +71,7 @@
   background: #d87f04;
 }
 
-.card-power {
+.card-influence {
   right: 10px;
   border-radius: 4px;
   background: black;
@@ -361,7 +361,7 @@
     li {
       counter-increment: count;
       position: relative;
-      margin-bottom: 3px;
+      margin-bottom: 5px;
       &::before {
         content: counter(count);
         position: absolute;
