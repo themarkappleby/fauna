@@ -55,22 +55,26 @@ function App() {
         shuffle(activeOrder);
         return (
           <div className="card" key={card.title} onClick={() => handleClick(card)}>
-              <div className="flags">
-                <div className="flag">
-                    <div>{activeOrder[0]}</div>
-                    <img src="/arrow.svg" />
+              <div className="flags-wrapper">
+                <div className="flags">
+                  <div className="flag">
+                      <div>{activeOrder[0]}</div>
+                      <img src="/arrow.svg" />
+                  </div>
+                  <div className="flag">
+                      <div>{activeOrder[1]}</div>
+                      <img src="/arrow.svg" />
+                  </div>
+                  <div className="flag">
+                      <div>{activeOrder[2]}</div>
+                      <img src="/arrow.svg" />
+                  </div>
                 </div>
-                <div className="flag">
-                    <div>{activeOrder[1]}</div>
-                    <img src="/arrow.svg" />
-                </div>
-                <div className="flag">
-                    <div>{activeOrder[2]}</div>
-                    <img src="/arrow.svg" />
-                </div>
-                <div className="flag">
-                    <div>{activeOrder[3]}</div>
-                    <img src="/arrow.svg" />
+                <div className="flags">
+                  <div className="flag">
+                      <div>{activeOrder[3]}</div>
+                      <img src="/arrow.svg" />
+                  </div>
                 </div>
               </div>
               <div className="card-info">
@@ -133,7 +137,7 @@ function App() {
           <li><b>Pass the die</b> and increase it by 1. Skip this in the first turn.</li>
           <li><b>Flip an unrevealed Location card</b>.</li>
           <li>Players <b>draw 2 cards, keep 1</b>, and discard the other.</li>
-          <li>Players <b>play cards face down</b> in a row. Place 0-2 tokens above each card to assign it a Location.</li>
+          <li>Players <b>play cards face down</b> in a row. Place 0-3 tokens above each card to assign it a Location.</li>
           <li><b>Reveal and place cards</b> at assigned Locations, starting with Initiative player. Limit 4 Fauna per Location per player.</li>
           <li>In the 6th turn, the player that controls the most Locations wins.</li>
         </ol>
