@@ -54,7 +54,7 @@ function App() {
         <div className="title-image" style={{backgroundImage: 'url(/boreal-forest.png)'}} />
         <div>
           <strong>Fauna</strong>
-          <div>A competitive card game for two; inspired by nature</div>
+          <div>A quick competitive card game for two; inspired by nature</div>
         </div>
         <div className="title-components">
           <ul>
