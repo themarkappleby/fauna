@@ -64,6 +64,14 @@ function App() {
         </div>
       </div>
       <div className="card instruction setup">
+        <strong>Card Overview</strong>
+        <ol>
+          <li><b>Top left:</b> The amount of Energy required to play this card. The total available Energy for the turn is indicated by the Energy die.</li>
+          <li><b>Top right:</b> The amount of Influence this card has over its Location.</li>
+          <li><b>Top middle:</b> The placement legend. Play the card with the indicated number of tokens to assign it to the left, middle, or right Location, or to discard the card.</li>
+        </ol>
+      </div>
+      <div className="card instruction setup">
         <strong>Game Setup</strong>
         <ol>
           <li><b>Set the Energy die</b> in front of a player with the 1-side upwards. This player has Initiative.</li>
@@ -78,7 +86,7 @@ function App() {
         <ol>
           <li><b>Flip an unrevealed Location card</b>.</li>
           <li>Players each <b>draw cards</b> until they have a hand of 5 cards.</li>
-          <li>Players <b>play cards face down</b> in a row. Place 0-3 tokens above each card to assign it a Location.</li>
+          <li>Players <b>play cards face down</b> in a row with 0-3 tokens above each card to assign it to any Location.</li>
           <li><b>Reveal and place cards</b> at assigned Locations, starting with the Initiative player. Limit 4 Fauna per Location per player.</li>
           <li>In the 6th turn, the player that controls the most Locations wins.</li>
           <li><b>Pass the die</b> and increase it by 1.</li>
@@ -123,10 +131,16 @@ function App() {
                 </div>
               </div>
               <div className="card-influence">
-                {card.influence}
+                <div>
+                  <span>{card.influence}</span>
+                  {/* <span>Influence</span> */}
+                </div>
               </div>
               <div className="card-cost">
-                {card.cost}
+                <div>
+                  <span>{card.cost}</span>
+                  {/* <span>Energy</span> */}
+                </div>
               </div>
               <div className="card-image" style={{backgroundImage: `url(/${imgName(card.title)}.png)`}} />
           </div>
@@ -153,7 +167,6 @@ function App() {
           </div>
         )
       })}
-      <div className="card"></div>
     </div>
   );
 }
