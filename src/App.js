@@ -51,7 +51,7 @@ function App() {
   return (
     <div className="cards">
       <div className="card title">
-        <div className="title-image" style={{backgroundImage: 'url(/boreal-forest.png)'}} />
+        <div className="title-image" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/boreal-forest.png)`}} />
         <div>
           <strong>Fauna</strong>
           <div>A quick competitive card game for two; inspired by nature</div>
@@ -101,21 +101,21 @@ function App() {
                 <div className="flags">
                   <div className="flag">
                       <div>{activeOrder[0]}</div>
-                      <img src="/arrow.svg" />
+                      <img src={`${process.env.PUBLIC_URL}/arrow.svg`} />
                   </div>
                   <div className="flag">
                       <div>{activeOrder[1]}</div>
-                      <img src="/arrow.svg" />
+                      <img src={`${process.env.PUBLIC_URL}/arrow.svg`} />
                   </div>
                   <div className="flag">
                       <div>{activeOrder[2]}</div>
-                      <img src="/arrow.svg" />
+                      <img src={`${process.env.PUBLIC_URL}/arrow.svg`} />
                   </div>
                 </div>
                 <div className="flags">
                   <div className="flag">
                       <div>{activeOrder[3]}</div>
-                      <img src="/trash.svg" />
+                      <img src={`${process.env.PUBLIC_URL}/trash.svg`} />
                   </div>
                 </div>
               </div>
@@ -142,14 +142,14 @@ function App() {
                   {/* <span>Energy</span> */}
                 </div>
               </div>
-              <div className="card-image" style={{backgroundImage: `url(/${imgName(card.title)}.png)`}} />
+              <div className="card-image" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/${imgName(card.title)}.png)`}} />
           </div>
         )
       })}
       {cards.locations.map(location => {
         return (
           <div onClick={() => handleClick(location)} className="card location" key={location.title}>
-            <div className="location-image" style={{backgroundImage: `url(/${imgName(location.title)}.png)`}} />
+            <div className="location-image" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/${imgName(location.title)}.png)`}} />
             <div>
               {[...Array(2)].map((e, i) => (
                 <div className="location-info">
