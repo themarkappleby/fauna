@@ -309,9 +309,9 @@ const cards = {
         {
             "title": "Groundhog",
             "cost": 4,
-            "influence": 6,
-            "trigger": "",
-            "ability": "",
+            "influence": 5,
+            "trigger": "On reveal",
+            "ability": "If your opponent played a card here this turn, +4 Influence",
             "description": "Known for burrowing and predicting seasons."
         },
         {
