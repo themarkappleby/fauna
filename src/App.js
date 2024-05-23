@@ -44,7 +44,7 @@ function App() {
   const handleClick = card => {
     const name = imgName(card.title);
     navigator.clipboard.writeText(name);
-    window.open(`https://www.google.com/search?tbm=isch&q=${name}-painting`, '_blank');
+    // window.open(`https://www.google.com/search?tbm=isch&q=${name}-painting`, '_blank');
     console.log(`Copied: ${name}!`)
   }
 
