@@ -51,7 +51,7 @@ function App() {
   return (
     <div className="cards">
       {cards.characters.map(card => {
-        const activeOrder = ['0', '1', '2']
+        const activeOrder = ['0', '1', '2', '3']
         shuffle(activeOrder);
         return (
           <div className="card" key={card.title} onClick={() => handleClick(card)}>
@@ -66,6 +66,10 @@ function App() {
                 </div>
                 <div className="flag">
                     <div>{activeOrder[2]}</div>
+                    <img src="/arrow.svg" />
+                </div>
+                <div className="flag">
+                    <div>{activeOrder[3]}</div>
                     <img src="/arrow.svg" />
                 </div>
               </div>
