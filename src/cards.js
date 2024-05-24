@@ -135,8 +135,8 @@ const cards = {
             "cost": 1,
             "influence": 2,
             "trigger": "On reveal",
-            "ability": "When this moves, dobule its Influence",
-            "description": "Swarms on the move gather strength."
+            "ability": "Add a 1/1 Locust token to each other location",
+            "description": "Swarms ravage the lands."
         },
         {
             "title": "Brook Trout",
