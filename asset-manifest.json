@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/fauna/static/css/main.0e082473.css",
-    "main.js": "/fauna/static/js/main.54d0b8b5.js",
+    "main.js": "/fauna/static/js/main.de14934b.js",
     "static/js/453.6094d209.chunk.js": "/fauna/static/js/453.6094d209.chunk.js",
     "static/media/frame.svg": "/fauna/static/media/frame.da24bb54c3cc4a6e8c68.svg",
     "index.html": "/fauna/index.html",
     "main.0e082473.css.map": "/fauna/static/css/main.0e082473.css.map",
-    "main.54d0b8b5.js.map": "/fauna/static/js/main.54d0b8b5.js.map",
+    "main.de14934b.js.map": "/fauna/static/js/main.de14934b.js.map",
     "453.6094d209.chunk.js.map": "/fauna/static/js/453.6094d209.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0e082473.css",
-    "static/js/main.54d0b8b5.js"
+    "static/js/main.de14934b.js"
   ]
 }
